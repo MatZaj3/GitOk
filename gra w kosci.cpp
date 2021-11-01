@@ -33,7 +33,12 @@ int main()
      cout<<"podaj ile graczy (2-4): ";
     cin>>n;
     string pn1, pn2, pn3, pn4;
-   
+   pn3="nie wybrany";
+   pn4="nie wybrany";
+   ps3=0;
+   pc3=0;
+   ps4=0;
+   pc4=0;
     cout<<"podaj nick pierwszego gracza ";
     cin>>pn1;
     cout<<"podaj nick drugiego gracza ";
@@ -63,7 +68,7 @@ int main()
         else {if (pc3>pc1 & pc3>pc2 & pc3>pc4) {cout<<"runde wygral "<< pn3;}
         else {if (pc4>pc1 & pc4>pc2 & pc4>pc3) {cout<<"runde wygral "<< pn4;}
         else cout<<"nikt nie wygral";}}}
-           cout<< "runda druga \n ";
+           cout<< "\n runda druga \n ";
     pc1 = kostki(0);
     ps1 = ps1+pc1;
     cout<< "drugie rzuty gracza "<< pn1 << " \n" << pc1<<" \n nastepny gracz \n";
@@ -73,13 +78,13 @@ int main()
     if (n>2) { pc3 = kostki(0); ps3= ps3+pc3;
     cout<< "drugie rzuty gracza "<< pn3 << " \n" << pc3 <<" \n nastepny gracz \n"; 
     if (n>3) {pc4 = kostki(0);   ps4= ps4+pc4;
-    cout<< "drugie rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 1= ";}}
+    cout<< "drugie rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 2= ";}}
     if (pc1>pc2 & pc1>pc3 & pc1>pc4) {cout<<"runde wygral "<<pn1;} 
     else {if (pc2>pc1 & pc2>pc3 & pc2>pc4) {cout<<"runde wygral "<<pn2;}
         else {if (pc3>pc1 & pc3>pc2 & pc3>pc4) {cout<<"runde wygral "<< pn3;}
         else {if (pc4>pc1 & pc4>pc2 & pc4>pc3) {cout<<"runde wygral "<< pn4;}
         else cout<<"nikt nie wygral";}}}
-        cout<< "runda trzecia \n ";
+        cout<< "\n runda trzecia \n ";
     pc1 = kostki(0);
     ps1 = ps1+pc1;
     cout<< "trzecie rzuty gracza "<< pn1 << " \n" << pc1<<" \n nastepny gracz \n";
@@ -89,13 +94,13 @@ int main()
     if (n>2) { pc3 = kostki(0); ps3= ps3+pc3;
     cout<< "trzecie rzuty gracza "<< pn3 << " \n" << pc3 <<" \n nastepny gracz \n"; 
     if (n>3) {pc4 = kostki(0);   ps4= ps4+pc4;
-    cout<< "trzecie rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 1= ";}}
+    cout<< "trzecie rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 3= ";}}
     if (pc1>pc2 & pc1>pc3 & pc1>pc4) {cout<<"runde wygral "<<pn1;} 
     else {if (pc2>pc1 & pc2>pc3 & pc2>pc4) {cout<<"runde wygral "<<pn2;}
         else {if (pc3>pc1 & pc3>pc2 & pc3>pc4) {cout<<"runde wygral "<< pn3;}
         else {if (pc4>pc1 & pc4>pc2 & pc4>pc3) {cout<<"runde wygral "<< pn4;}
         else cout<<"nikt nie wygral";}}}
-        cout<< "runda czwarta \n ";
+        cout<< "\n runda czwarta \n ";
     pc1 = kostki(0);
     ps1 = ps1+pc1;
     cout<< "czwarte rzuty gracza "<< pn1 << " \n" << pc1<<" \n nastepny gracz \n";
@@ -105,13 +110,13 @@ int main()
     if (n>2) { pc3 = kostki(0); ps3= ps3+pc3;
     cout<< "czwarte rzuty gracza "<< pn3 << " \n" << pc3 <<" \n nastepny gracz \n"; 
     if (n>3) {pc4 = kostki(0);   ps4= ps4+pc4;
-    cout<< "czwarte rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 1= ";}}
+    cout<< "czwarte rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 4= ";}}
     if (pc1>pc2 & pc1>pc3 & pc1>pc4) {cout<<"runde wygral "<<pn1;} 
     else {if (pc2>pc1 & pc2>pc3 & pc2>pc4) {cout<<"runde wygral "<<pn2;}
         else {if (pc3>pc1 & pc3>pc2 & pc3>pc4) {cout<<"runde wygral "<< pn3;}
         else {if (pc4>pc1 & pc4>pc2 & pc4>pc3) {cout<<"runde wygral "<< pn4;}
         else cout<<"nikt nie wygral";}}}
-        cout<< "runda piota \n ";
+        cout<< "\n runda piota \n ";
     pc1 = kostki(0);
     ps1 = ps1+pc1;
     cout<< "piote rzuty gracza "<< pn1 << " \n" << pc1<<" \n nastepny gracz \n";
@@ -121,13 +126,13 @@ int main()
     if (n>2) { pc3 = kostki(0); ps3= ps3+pc3;
     cout<< "piote rzuty gracza "<< pn3 << " \n" << pc3 <<" \n nastepny gracz \n"; 
     if (n>3) {pc4 = kostki(0);   ps4= ps4+pc4;
-    cout<< "piote rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 1= ";}}
+    cout<< "piote rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 5= ";}}
     if (pc1>pc2 & pc1>pc3 & pc1>pc4) {cout<<"runde wygral "<<pn1;} 
     else {if (pc2>pc1 & pc2>pc3 & pc2>pc4) {cout<<"runde wygral "<<pn2;}
         else {if (pc3>pc1 & pc3>pc2 & pc3>pc4) {cout<<"runde wygral "<< pn3;}
         else {if (pc4>pc1 & pc4>pc2 & pc4>pc3) {cout<<"runde wygral "<< pn4;}
         else cout<<"nikt nie wygral";}}}
-        cout<< "runda szosta \n ";
+        cout<< "\n runda szosta \n ";
     pc1 = kostki(0);
     ps1 = ps1+pc1;
     cout<< "szoste rzuty gracza "<< pn1 << " \n" << pc1<<" \n nastepny gracz \n";
@@ -137,7 +142,7 @@ int main()
     if (n>2) { pc3 = kostki(0); ps3= ps3+pc3;
     cout<< "szoste rzuty gracza "<< pn3 << " \n" << pc3 <<" \n nastepny gracz \n"; 
     if (n>3) {pc4 = kostki(0);   ps4= ps4+pc4;
-    cout<< "szoste rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 1= ";}}
+    cout<< "szoste rzuty gracza "<< pn4 << " \n" << pc4 <<" \n wynik rundy 6= ";}}
     if (pc1>pc2 & pc1>pc3 & pc1>pc4) {cout<<"runde wygral "<<pn1;} 
     else {if (pc2>pc1 & pc2>pc3 & pc2>pc4) {cout<<"runde wygral "<<pn2;}
         else {if (pc3>pc1 & pc3>pc2 & pc3>pc4) {cout<<"runde wygral "<< pn3;}
@@ -145,7 +150,7 @@ int main()
         else cout<<"nikt nie wygral";}}}
         
         cout<<"\n wyniki to: "<<pn1<<" = "<<ps1<<"\n"<<pn2<<" = "<<ps2<<"\n"<<pn3<<" = "<<ps3<<"\n"<<pn4<<" = "<<ps4;
-        if (ps1>ps4 & ps1>ps3 & ps1>ps4) {cout<<"\n wygral = "<<pn1<<endl;}
+        if (ps1>ps2 & ps1>ps3 & ps1>ps4) {cout<<"\n wygral = "<<pn1<<endl;}
         else {if (ps2>ps1 & ps2>ps3 & ps2>ps4) {cout<<"\n wygral = "<<pn2<<endl;}
         else {if (ps3>ps1 & ps3>ps2 & ps3>ps4) {cout<<"\n wygral = "<<pn3<<endl;}
         else {if (ps4>ps1 & ps4>ps2 & ps4>ps3) {cout<<"\n wygral = "<<pn4<<endl;}
